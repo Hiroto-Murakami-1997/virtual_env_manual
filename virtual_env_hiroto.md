@@ -279,7 +279,7 @@ sudo systemctl start php-fpm
 ブラウザにhttp://192.168.33.19 を入力し、laravelの画面が表示されるか確認。
 laravel画面右上のsigninとregisterから登録とサインインができたら完成です。
 
-⑯アプリケーション画面が正しく表示されなかった場合
+## ⑯アプリケーション画面が正しく表示されなかった場合
 ### 1. 画面自体が表示されない場合  
 ファイアウォールの設定  
  Vagrantfileの編集をした際、に編集した```config.vm.network "forwarded_port", guest: 80, host: 8080```の、```guest: 80```はhttp通信を行うための通路番号を表しており、ファイアウォールに対してこのポートを経由でhttp通信することを許可する必要があります。
